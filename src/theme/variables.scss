@@ -1,2 +1,37 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+:root {
+	--ion-color-larven: #9a68bb;
+	--ion-color-larven-rgb: 154,104,187;
+	--ion-color-larven-contrast: #000000;
+	--ion-color-larven-contrast-rgb: 0,0,0;
+	--ion-color-larven-shade: #885ca5;
+	--ion-color-larven-tint: #a477c2;
+}
+
+.ion-color-larven {
+	--ion-color-base: var(--ion-color-larven);
+	--ion-color-base-rgb: var(--ion-color-larven-rgb);
+	--ion-color-contrast: var(--ion-color-larven-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-larven-contrast-rgb);
+	--ion-color-shade: var(--ion-color-larven-shade);
+	--ion-color-tint: var(--ion-color-larven-tint);
+}
+
+:root {
+	--ion-color-mareng: #7c2f98;
+	--ion-color-mareng-rgb: 124,47,152;
+	--ion-color-mareng-contrast: #ffffff;
+	--ion-color-mareng-contrast-rgb: 255,255,255;
+	--ion-color-mareng-shade: #6d2986;
+	--ion-color-mareng-tint: #8944a2;
+}
+
+.ion-color-mareng {
+	--ion-color-base: var(--ion-color-mareng);
+	--ion-color-base-rgb: var(--ion-color-mareng-rgb);
+	--ion-color-contrast: var(--ion-color-mareng-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-mareng-contrast-rgb);
+	--ion-color-shade: var(--ion-color-mareng-shade);
+	--ion-color-tint: var(--ion-color-mareng-tint);
+}

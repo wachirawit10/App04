@@ -1,20 +1,58 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="larven">
     <ion-title>
-      Blank
+      Component
     </ion-title>
+    <ion-searchbar></ion-searchbar>
+    <ion-segment value="all">
+      <ion-segment-button value="all">
+        <ion-label>All</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="toggle">
+        <ion-label>Toggle</ion-label>
+      </ion-segment-button>
+    </ion-segment><ion-list>
+      <ion-item>
+        <ion-select aria-label="Fruit" interface="popover" placeholder="Rough Rayh">
+          <ion-select-option value="apples">Mareng Pod</ion-select-option>
+          <ion-select-option value="oranges">Pod Cheern</ion-select-option>
+          <ion-select-option value="bananas">Pod talu</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <ion-toggle [enableOnOffLabels]="true">Pod See Dum</ion-toggle>
+    <ion-button expand="block" (click)="presentToast('middle')">Present Toast At the Middle</ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="document" color="mareng"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="image-outline" color="larven"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="globe"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="home"></ion-icon>
+      Home
+    </ion-tab-button>
+    <ion-tab-button tab="book">
+      <ion-icon name="book"></ion-icon>
+      About
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+
