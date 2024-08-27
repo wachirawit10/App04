@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AboutPage } from './about/about.page';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+constructor (private a:NavController){
+
 }
+
+  Aboutpage(){
+    this.a.navigateForward('/about')
+  }
+}
+
